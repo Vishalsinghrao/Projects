@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --background-color : #FBFBFB;
+    --green-background-color : #153E52;
+    --dark-green-color: #113448;
+    --light-green-color: #14BF98;
+    --dark-gray-color: #484A46;
+    --light-gray-color: #787976;
+    --white-color: #FFFFFF;
+    --disabled-color: #E9ECEF;
+    --dark-white-color: #DFE5EC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+h1,h2,h3,h4.h5,h6,p,a,span,button,li,input,textarea,label,select,option{
+    font-family: "Open Sans", sans-serif;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid var(--light-green-color);
+    background-color: var(--light-green-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all 0.125s ease-in-out;
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--light-green-color);
+}
+nav{
+    display: flex;
+    gap: 5px;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white-color);
+    transition: color 0.125 ease-in-out;
+}
+
+nav a:visited{
+    color: var(--white-color);
+}
+
+nav a:hover{
+    color: var(--light-green-color);
+}
+
+nav img{
+    height: 4rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("./media/home_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    gap: 1.5rem;
+}
+
+.home h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.home p{
+    font-size: 1.5rem;
+    width: 50%;
+}
