@@ -163,3 +163,12 @@ button{
     margin: 5px;
     padding: 100px;
 }
+
+.social-icons{
+    position: relative;
+    top: 52vh;
+    left: 21vw;
+    color: whitesmoke;
+    margin: 5px;
+    padding: 100px;
+}
