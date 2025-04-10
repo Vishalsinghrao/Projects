@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg-image-zoro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.zoro {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin: 10px 0 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+  padding: 10px;
+  border: none;
+  background-color: #ff4c4c;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cta-button button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #ff4c4c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon2 {
+  font-size: 1.2rem;
+}
+
+.latest-updates {
+  padding: 50px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.latest-updates h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}

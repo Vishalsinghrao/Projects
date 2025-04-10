@@ -5,6 +5,10 @@
 body{
     overflow-x: hidden; 
     background-color: rgba(0, 0, 0, 0.837);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 
@@ -71,9 +75,10 @@ ul li{
 }
 
 .search-container{
-    position: absolute;
+    position: relative;
     top: 20vh;
     z-index: 1;
+    left: -14vw;
 }
 
 .search{
@@ -96,7 +101,7 @@ ul li{
     border: 2px solid  rgb(183, 247, 87);
     border-radius: 50px;
     background-color:  rgb(183, 247, 87);
-    position: absolute;
+    position: relative;
     left: 38vw;
     width: 50px;
     height: 50px;
@@ -119,10 +124,10 @@ span{
 .text-content{
     
     position: relative;
-    top: 10vh;
+    top: 4vh;
     left: 2vw;
     color: whitesmoke;
-    margin: 5px;
+    margin: 1px;
 }
 
 button{
@@ -145,8 +150,8 @@ button{
 
 .icon2{
     z-index: 1;
-    position: absolute;
-    top: 71.2vh;
+    
+    top: 40vh;
     color: white;
     left: 57vw;
     border: 2px solid black;
@@ -198,3 +203,10 @@ button{
     transform: scale(1.1);
 }
 
+
+.latest-updates{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    z-index: 1;
+}
